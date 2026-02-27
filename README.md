@@ -68,8 +68,8 @@ Exemplo:
     "category": "data_engineering"
   }
 }
-
-
+```
+---
 ⚙️ Tecnologias Utilizadas
 
 │— Python
@@ -82,7 +82,7 @@ Exemplo:
 │
 │— Delta Lake
 
-
+---
 🚦 Estratégia de Consumo de API
 
 │— Janela de coleta: últimos 7 dias
@@ -95,7 +95,7 @@ Exemplo:
 │
 │— Classificação e refinamento feitos downstream
 
-
+---
 ▶️ Execução
 
 │—Executar o script de ingestão localmente
@@ -104,7 +104,7 @@ Exemplo:
 │
 │—O Databricks consome os dados do S3 para processamento incremental
 
-
+---
 📌 Observações
 
 │—Projeto com foco educacional e de portfólio
@@ -113,7 +113,7 @@ Exemplo:
 │
 │—Decisões técnicas priorizam clareza, custo e escalabilidade
 
-
+---
 📄 Autor
 
 Marcelo Cabral

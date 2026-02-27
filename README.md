@@ -16,7 +16,7 @@ Construir um pipeline de dados realista para:
 ---
 
 ## 🏗️ Arquitetura
--API TheirStack
+API TheirStack
 │
 Script Python (coleta e ingestão)
 │
@@ -72,13 +72,13 @@ Exemplo:
 ---
 ⚙️ Tecnologias Utilizadas
 
-│— Python
+Python
 │
-│— API TheirStack
+API TheirStack
 │
-│— Amazon S3
+Amazon S3
 │
-│— Databricks
+Databricks
 │
 │— Delta Lake
 

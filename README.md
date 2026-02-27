@@ -16,7 +16,7 @@ Construir um pipeline de dados realista para:
 ---
 
 ## 🏗️ Arquitetura
-API TheirStack
+-API TheirStack
 │
 Script Python (coleta e ingestão)
 │

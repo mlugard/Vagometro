@@ -80,38 +80,38 @@ Amazon S3
 │
 Databricks
 │
-│— Delta Lake
+Delta Lake
 
 ---
 🚦 Estratégia de Consumo de API
 
-│— Janela de coleta: últimos 7 dias
+Janela de coleta: últimos 7 dias
 │
-│— Execução: semanal
+Execução: semanal
 │
-│— Filtro de cargos aplicado na API
+Filtro de cargos aplicado na API
 │
-│— Paginação limitada para controle de custo
+Paginação limitada para controle de custo
 │
-│— Classificação e refinamento feitos downstream
+Classificação e refinamento feitos downstream
 
 ---
 ▶️ Execução
 
-│—Executar o script de ingestão localmente
+Executar o script de ingestão localmente
 │
-│—Os dados são salvos no Amazon S3 (camada Bronze)
+Os dados são salvos no Amazon S3 (camada Bronze)
 │
-│—O Databricks consome os dados do S3 para processamento incremental
+O Databricks consome os dados do S3 para processamento incremental
 
 ---
 📌 Observações
 
-│—Projeto com foco educacional e de portfólio
+Projeto com foco educacional e de portfólio
 │
-│—Arquitetura inspirada em pipelines reais de mercado
+Arquitetura inspirada em pipelines reais de mercado
 │
-│—Decisões técnicas priorizam clareza, custo e escalabilidade
+Decisões técnicas priorizam clareza, custo e escalabilidade
 
 ---
 📄 Autor

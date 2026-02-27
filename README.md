@@ -1,4 +1,4 @@
-# Vagômetro — Pipeline de Engenharia de Dados para Vagas de Dados no Brasil
+# Vagômetro — Pipeline de Vagas de Dados no Brasil
 
 Projeto de engenharia de dados que coleta, processa e analisa vagas da área de dados no Brasil a partir de uma API externa, utilizando uma arquitetura em camadas (Bronze / Silver / Gold), com controle de custo, ingestão incremental e classificação semântica de cargos.
 

@@ -12,9 +12,9 @@ load_dotenv()
 
 API_KEY = os.getenv("THEIRSTACK_API_KEY")
 BASE_URL = "https://api.theirstack.com/v1/jobs/search"
-LIMIT = 30               
-MAX_PAGES = 10           
-SLEEP_SECONDS = 1.5      
+LIMIT = 20               
+MAX_PAGES = 3           
+SLEEP_SECONDS = 2     
 
 if not API_KEY:
     raise Exception("API KEY não encontrada.")
@@ -73,9 +73,10 @@ while page < MAX_PAGES:
     response = requests.post(BASE_URL, json=payload, headers=headers)
 
     # Tratamento explícito de 403 (excesso de requisições)
-    if response.status_code == 403:
-        print(f"🚫 403 Forbidden na página {page}. Possível rate limit ou limite do plano.")
-        break
+    if response.status_code in (403, 429):
+        print("⏳ Rate limit atingido. Aguardando 5 minutos...")
+        time.sleep(300)
+        continue
 
     # Tratamento explícito de 402 (limite do plano excedido ou filtro não permitido)
     if response.status_code == 402:
